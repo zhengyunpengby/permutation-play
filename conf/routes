@@ -1,0 +1,19 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+GET    /explore                     controllers.HomeController.explore
+GET    /tutorial                    controllers.HomeController.tutorial
+GET    /text                    controllers.HomeController.text
+GET    /say                    controllers.HomeController.say(name : String)
+
+
+# Permutation
+GET     /zyp/permutation/:num/insert              controllers.PermutationController.insert(num : Integer)	
+GET     /zyp/permutation/:num/foreach              controllers.PermutationController.foreach(num : Integer)	
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
