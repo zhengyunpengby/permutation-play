@@ -12,7 +12,10 @@ GET    /say                    controllers.HomeController.say(name : String)
 
 # Permutation
 GET     /zyp/permutation/:num/insert              controllers.PermutationController.insert(num : Integer)	
-GET     /zyp/permutation/:num/foreach              controllers.PermutationController.foreach(num : Integer)	
+GET     /zyp/permutation/:num/foreach              controllers.PermutationController.foreach(num : Integer)
+GET     /zyp/permutation/:num/increase              controllers.PermutationController.increase(num : Integer)
+GET     /zyp/permutation/:num/increase/init              controllers.PermutationController.increaseInit(num : Integer)
+GET     /zyp/permutation/:permutation/increase/incr              controllers.PermutationController.increaseIncr(permutation : String)
 
 
 # Map static resources from the /public folder to the /assets URL path
